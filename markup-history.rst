@@ -3,12 +3,14 @@ A history of markup languages
 
 By Tibs / Tony Ibbs, for PyConUK 2017
 
-Written using reStructuredText_, presented using darkslide_, source and
-extended notes at https://github.com/tibs/markup-history
+Written using reStructuredText_.  Presented using landslide_.
+
+Source and extended notes at https://github.com/tibs/markup-history
+
+You may also be interested in Write the Docs: http://www.writethedocs.org/
 
 .. _reStructuredText: http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html
-.. _darkslide: https://github.com/ionelmc/python-darkslide
-
+.. _landslide: https://github.com/adamzap/landslide
 
 .. |TeX| replace:: TeX
 
@@ -632,7 +634,7 @@ Fin
 * 1990s HTML, setext, Docbook, WikiWikiWeb, StructuredText, XML
 * 2000s reStructuredText, AsciiDoc, markdown
 
-Written using reStructuredText_.  Presented using hovercraft_.
+Written using reStructuredText_.  Presented using landslide_.
 
 Source and extended notes at https://github.com/tibs/markup-history
 

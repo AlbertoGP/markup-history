@@ -1,16 +1,16 @@
-# Run darkslide to output on http://localhost:8000
+# Run landslide to output on http://localhost:8000
 
 .PHONY: default
 default: html slides
 
 .PHONY: slides
 slides:
-	darkslide -i markup-history.rst presentation.html
+	landslide -i markup-history.rst presentation.html
 
 .PHONY: watch
 watch:
 	echo 'Watching for changes to markup-history.rst'
-	darkslide -i -w markup-history.rst presentation.html
+	landslide -i -w markup-history.rst presentation.html
 
 .PHONY: html
 html:
