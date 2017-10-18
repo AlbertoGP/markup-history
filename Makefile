@@ -1,16 +1,16 @@
-# Run hovercraft to output on http://localhost:8000
+# Run darkslide to output on http://localhost:8000
 
 .PHONY: default
 default: html slides
 
 .PHONY: slides
 slides:
-	hovercraft markup-history.rst slides
+	darkslide -i markup-history.rst presentation.html
 
-.PHONY: show
-show:
-	echo 'Go to http://localhost:8000 to see the slides'
-	hovercraft markup-history.rst
+.PHONY: watch
+watch:
+	echo 'Watching for changes to markup-history.rst'
+	darkslide -i -w markup-history.rst presentation.html
 
 .PHONY: html
 html:
@@ -22,6 +22,7 @@ html:
 .PHONY: clean
 clean:
 	rm -f README.html
+	rm -f presentation.html
 	rm -f markup-history.html
 	rm -f notes-per-slide.html
 	rm -f markup-history-extended-notes.html
@@ -31,7 +32,7 @@ clean:
 .PHONY: help
 help:
 	@echo 'make         same as: make html slides'
-	@echo 'make slides  create slideshow in slides/'
-	@echo 'make show    show slideshow on http://localhost:8000'
+	@echo 'make slides  create slideshow as presentation.html'
+	@echo 'make watch   watch markup-history.rst for changes'
 	@echo 'make html    create HTML files using rst2html'
 	@echo 'make clean   delete HTML files and slides/'
